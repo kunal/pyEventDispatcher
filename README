@@ -1,1 +1,2 @@
-Event Dispatcher library in Python
+Event Dispatcher library in Python.
+Based on Symfony Components Event Dispatcher library ( http://components.symfony-project.org/event-dispatcher/ )
