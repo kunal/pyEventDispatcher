@@ -6,25 +6,14 @@ class EventDispatcher:
     def __init__(self):
         self.listeners = {}
         if EventDispatcher.__instance:
-#            raise EventDispatcher.__instance
-            print "IF"
             pass
         else:
-            print "ELSE"
             EventDispatcher.__instance = self
 #        return EventDispatcher.__instance
 
 
     def call_user_func(self, functionName):
         functionName()
-
-#    @staticmethod
-#    def getInstance(self):
-#        if EventDispatcher.__instance == None:
-#            EventDispatcher.__instance = EventDispatcher()
-#            print "test"
-
-#        return EventDispatcher.__instance
 
     def connect(self, name, listener):
         if not self.listeners.has_key(name):
