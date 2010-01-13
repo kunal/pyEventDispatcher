@@ -2,17 +2,20 @@
 
 from pyEventDispatcher.Event import Event
 from pyEventDispatcher.EventDispatcher import EventDispatcher
-from consumer import Consumer
+
+#from consumer import Consumer
+import dispatcher
 
 class Main():
     def __init__(self):
-        dispatcher = EventDispatcher()
-        print dispatcher
+        self.dispatcherObj = dispatcher()
+        self.dispatcher = dispatcherObj.getEventDispatcher()
+        print self.dispatcher
 
         self.event = Event(self, 'ucc', {})
-        dispatcher.notify(self.event)
+        self.dispatcher.notify(self.event)
         self.event = Event(self, 'uc', {})
-        dispatcher.notify(self.event)
+        self.dispatcher.notify(self.event)
 
     def getEvent(self):
         return self.event
