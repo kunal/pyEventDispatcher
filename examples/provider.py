@@ -1,4 +1,4 @@
-#!/usr/bin/env python                                                                        
+#!/usr/bin/env python
 
 from pyEventDispatcher.Event import Event
 from pyEventDispatcher.EventDispatcher import EventDispatcher
@@ -9,14 +9,6 @@ class Main():
         dispatcher = EventDispatcher()
         print dispatcher
 
-        dispatcher1 = EventDispatcher()
-        print dispatcher1
-#        print dispatcher
-#        dispatcher1 = EventDispatcher.getInstance()
-#        print dispatcher1
-
-#        c = Consumer()
-#        dispatcher = Consumer.getDispatcher(Consumer())
         self.event = Event(self, 'ucc', {})
         dispatcher.notify(self.event)
         self.event = Event(self, 'uc', {})
