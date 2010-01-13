@@ -2,10 +2,10 @@
 
 from pyEventDispatcher.EventDispatcher import EventDispatcher
 
-class cdispatcher:
+class dispatcher():
     def __init__(self):
         pass
 
     def getEventDispatcher(self):
-        self.dispatcher = EventDispatcher()
-        return self.dispatcher
+        self.dispatcherObj = EventDispatcher()
+        return self.dispatcherObj

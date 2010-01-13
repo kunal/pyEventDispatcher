@@ -2,12 +2,12 @@
 
 from pyEventDispatcher.EventDispatcher import EventDispatcher
 
-import dispatcher
+from dispatcher import dispatcher
 
 class Consumer:
     def __init__(self):
         self.dispatcherObj = dispatcher()
-        self.dispatcher = dispatcherObj.getEventDispatcher()
+        self.dispatcher = self.dispatcherObj.getEventDispatcher()
         self.dispatcher.connect('uc', self.abc)
         self.dispatcher.connect('ucc', self.pqr)
 
