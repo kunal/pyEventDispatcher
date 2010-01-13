@@ -44,6 +44,3 @@ class Event:
 
     def offsetUnset(self, name):
         del parameters[name]
-
-#if __name__ == "__main__":
-#    evt = Event("A", "Kunal", "AA")
