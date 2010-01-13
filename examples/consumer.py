@@ -1,4 +1,4 @@
-#!/usr/bin/env python                                                                        
+#!/usr/bin/env python
 
 from pyEventDispatcher.EventDispatcher import EventDispatcher
 
@@ -16,7 +16,3 @@ class Consumer:
 
     def pqr(self):
         print "test"
-
-
-
-
